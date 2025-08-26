@@ -1,0 +1,111 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('../fontes/idroid.otf');
+}
+
+
+
+/* CSS Document */
+body {
+    font-family: 'arial', sans-serif;
+    background-color: #2ecc71; /* verde suave */
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    font-family: 'idroid';
+    color: #145a32; /* verde escuro */
+    padding: 4px;
+}
+
+ul {
+    list-style-type: '\2714\0020\0020';
+    padding-left: 20px;
+    columns: 2;
+   list-style-position: inside;
+}
+
+h2#extra {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #27ae60; /* verde médio */
+    padding: 4px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.curiosidade {
+    background-color: #a9dfbf; /* verde claro */
+    padding: 0px;
+    border-radius: 20px;
+    text-align: justify;
+    height: 510px;
+}
+
+.curiosidade > p {
+    padding: 10px;
+    margin: 0px 10px 0px 10px;
+    text-align: justify;
+}
+
+h3 {
+    font-family: 'idroid';
+    color: #27ae60; /* verde médio */
+    background: linear-gradient(to right, rgba(39, 174, 96, 0.2), rgba(255, 255, 255, 0.2));
+    padding: 4px;
+}
+
+main {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+}
+
+header {
+    background: linear-gradient(to bottom, #2ecc71, #145a32); /* verde suave para escuro */
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'bebas neue', sans-serif;
+}
+
+nav {
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+}
+
+nav > a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block;
+}
+
+nav a:hover {
+    text-decoration: none;
+    color: #27ae60; /* verde médio */
+}
+
+a {
+    color: #145a32; /* verde escuro */
+    font-weight: bold;
+    
+
+}
+
+.citação::after {
+    content: "🔗";
+    text-decoration: none;
+}
+footer {
+    background: linear-gradient(to top, #2ecc71, #145a32); /* verde suave para escuro */
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    border-radius: 5px;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site e, vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagens flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudio en HTML5</p>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/Aces High - Funkorama - Kevin MacLeod.mp3" type="audio/mpeg">  
+        <source src="midia/Aces High - Funkorama - Kevin MacLeod.ogg" type="audio/ogg">
+        <source src="midia/Aces-High-Funkorama-Kevin-MacLeod.wav" type="audio/wav">
+    ></audio>
+
+    <h1>Reproduzindo Vídeos</h1>
+    
+</body>
+</html>
