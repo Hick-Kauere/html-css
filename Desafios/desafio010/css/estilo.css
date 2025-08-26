@@ -12,6 +12,7 @@ body {
     background-color: #2ecc71; /* verde suave */
     margin: 0;
     padding: 0;
+    text-size-adjust: 100%;
 }
 
 
@@ -19,6 +20,7 @@ h2 {
     font-family: 'idroid';
     color: #145a32; /* verde escuro */
     padding: 4px;
+    text-align: justify;
 }
 
 ul {
@@ -108,4 +110,39 @@ footer {
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
     border-radius: 5px;
+}
+
+/* Responsividade para texto e layout */
+body {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+}
+h2, h3 {
+    font-size: clamp(1.3rem, 4vw, 2.2rem);
+}
+main {
+    width: 90vw;
+    max-width: 800px;
+}
+ul {
+    columns: 1;
+}
+@media (max-width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+    h2, h3 {
+        font-size: 1.2rem;
+    }
+    main {
+        width: 98vw;
+        padding: 4vw;
+    }
+    .curiosidade {
+        height: auto;
+        padding: 8px;
+    }
+    ul {
+        columns: 1;
+        padding-left: 10px;
+    }
 }
