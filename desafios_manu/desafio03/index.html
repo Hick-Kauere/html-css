@@ -11,9 +11,17 @@
         --cor-principal: #4A90E2;
         --cor-secundaria: #4CAF50;
         }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
         header {
             background-color: var(--cor-principal);
             height: auto;
+            padding: 10px;
         }
 
         header nav a {
@@ -25,6 +33,7 @@
             background-color: var(--cor-secundaria);
             padding: 2px;
             height: auto;
+            border-radius: 5px;
         }
 
         header nav a:hover {
@@ -33,6 +42,7 @@
             transition: 0.3s;
             border-radius: 5px;
             padding: 2px;
+            
         }
 
         .botao {
@@ -57,10 +67,73 @@
             border-radius: 20px;
             background-color: var(--cor-principal);
             height: auto;
+            padding: 20px;
+            margin: 20px 20px 20px 20px;
+            text-align: center;
+            display: inline-block;
 
         }
+        
+        section#principal div {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .funcionalidade {
+            background-color: var(--cor-secundaria);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            display: inline-block;
+        }
 
+        .emoji {
+            text-align: center;
+            font-size: 2.5em;
+        }
 
+        .planos {
+            background-color: white;
+            border: 2px solid var(--cor-principal);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            display: inline-block;
+            width: 250px;
+        }
+
+        #Funcionalidades {
+            text-align: center;
+            background-color: var(--cor-principal);
+        }
+        #Planos {
+            text-align: center;
+            background-color: var(--cor-principal);
+            padding-bottom: 20px;
+        }
+
+        footer {
+            background-color: var(--cor-secundaria);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -95,6 +168,38 @@ Orga<tspan fill="#4CAF50">Note</tspan>
             <h1>Organize sua vida, simplifique sua mente</h1>
             <p>Com o Orgonote, você pode criar listas de tarefas, definir lembretes e acompanhar seu progresso de forma fácil e intuitiva.</p>
             <a href="#" class="botao">Comece usar gratuitamente</a>
+
+            
+                <div>
+                    <svg width="250" height="500" viewBox="0 0 250 500" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Corpo do celular -->
+                  <rect x="10" y="10" width="230" height="480" rx="30" ry="30" fill="#1E1E1E" stroke="#333" stroke-width="4"/>
+                  <!-- Tela -->
+                  <rect x="25" y="40" width="200" height="420" rx="15" ry="15" fill="white"/>
+                
+                  <!-- Logo OrgaNote no topo -->
+                  <text x="125" y="80" font-family="'Segoe UI', sans-serif" font-size="22" text-anchor="middle" font-weight="bold" fill="#1E3A8A">
+                    Orga<tspan fill="#4CAF50">Note</tspan>
+                  </text>
+                
+                  <!-- Interface simulada: notas -->
+                  <rect x="40" y="110" width="170" height="50" rx="10" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+                  <text x="55" y="140" font-family="'Segoe UI', sans-serif" font-size="14" fill="#333">✔ Comprar mantimentos</text>
+                
+                  <rect x="40" y="180" width="170" height="50" rx="10" fill="#E3F2FD" stroke="#1E88E5" stroke-width="2"/>
+                  <text x="55" y="210" font-family="'Segoe UI', sans-serif" font-size="14" fill="#333">✔ Reunião 15h</text>
+                
+                  <rect x="40" y="250" width="170" height="50" rx="10" fill="#FFF8E1" stroke="#FFB300" stroke-width="2"/>
+                  <text x="55" y="280" font-family="'Segoe UI', sans-serif" font-size="14" fill="#333">□ Estudar CSS</text>
+                
+                  <rect x="40" y="320" width="170" height="50" rx="10" fill="#F3E5F5" stroke="#8E24AA" stroke-width="2"/>
+                  <text x="55" y="350" font-family="'Segoe UI', sans-serif" font-size="14" fill="#333">□ Treino corrida</text>
+                
+                  <!-- Botão inferior -->
+                  <circle cx="125" cy="470" r="12" fill="#444"/>
+                </svg>
+                </div>
+            
         
 
         </section>
@@ -115,7 +220,7 @@ Orga<tspan fill="#4CAF50">Note</tspan>
                 <h3>Backup na Nuvem</h3>
                 <p>Acesse seus dados em qualquer dispositivo.</p>
         </section>
-        <section>
+        <section id="Planos">
             <h2>Planos ideais para você</h2>
             <div class="planos">
                 <h3>Básico</h3>
