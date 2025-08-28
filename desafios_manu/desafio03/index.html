@@ -5,13 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/estilos.css">
     <title>Orgonote</title>
+    <style>
+
+        :root {
+        --cor-principal: #4A90E2;
+        --cor-secundaria: #4CAF50;
+        }
+        header {
+            background-color: var(--cor-principal);
+            height: auto;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.1em;
+            background-color: var(--cor-secundaria);
+            padding: 2px;
+            height: auto;
+        }
+
+        header nav a:hover {
+            background-color: white;
+            color: var(--cor-principal);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 2px;
+        }
+
+        .botao {
+            background-color: var(--cor-secundaria);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .botao:hover {
+            background-color: white;
+            color: var(--cor-principal);
+            transition: 0.3s;
+            border-radius: 5px;
+            padding: 10px 20px;
+        }
+        section#principal {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            background-color: var(--cor-principal);
+            height: auto;
+
+        }
+
+
+    </style>
 </head>
 <body>
     <header>
 
         <picture>
             
-            <img src="#" alt="logo do aplicativo">
+            <svg width="250" height="80" viewBox="0 0 250 80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<!-- Ícone de bloco de notas -->
+<rect x="10" y="10" width="50" height="60" rx="8" ry="8" fill="#4CAF50"/>
+<line x1="20" y1="25" x2="50" y2="25" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<line x1="20" y1="40" x2="50" y2="40" stroke="white" stroke-width="3" stroke-linecap="round"/>
+<line x1="20" y1="55" x2="40" y2="55" stroke="white" stroke-width="3" stroke-linecap="round"/>
+
+
+<!-- Texto OrgaNote -->
+<text x="80" y="50" font-family="'Segoe UI', sans-serif" font-size="32" fill="#1E3A8A" font-weight="bold">
+Orga<tspan fill="#4CAF50">Note</tspan>
+</text>
+</svg>
         </picture>
         <nav>
             <a href="#">Funcionalidades</a>
@@ -26,25 +95,23 @@
             <h1>Organize sua vida, simplifique sua mente</h1>
             <p>Com o Orgonote, você pode criar listas de tarefas, definir lembretes e acompanhar seu progresso de forma fácil e intuitiva.</p>
             <a href="#" class="botao">Comece usar gratuitamente</a>
-            <aside>
-                <img src="#" alt="imagem ilustrativa do aplicativo">
-            </aside>
+        
 
         </section>
         <section id="Funcionalidades">
             <h2>Tudo que você precisa em um só lugar</h2>
             <div class="funcionalidade">
-                <img src="#" alt="ícone de listas de tarefas">
+                <P class="emoji">&#x1F4DD</P>
                 <h3>Listas de Tarefas</h3>
                 <p>Crie e organize suas tarefas diárias com facilidade.</p>
             </div>
             <div class="funcionalidade">
-                <img src="#" alt="ícone de lembretes">
+                <p class="emoji">&#x1F4C5</p>
                 <h3>Lembretes</h3>
                 <p>Defina lembretes para nunca esquecer um compromisso importante.</p>
             </div>
             <div class="funcionalidade">
-                <img src="#" alt="ícone de progresso">
+                <p class="emoji">&#x2601 &#xFE0F</p>
                 <h3>Backup na Nuvem</h3>
                 <p>Acesse seus dados em qualquer dispositivo.</p>
         </section>
@@ -52,7 +119,7 @@
             <h2>Planos ideais para você</h2>
             <div class="planos">
                 <h3>Básico</h3>
-                <p>gratuitamente</p>
+                <p>Gratuitamente</p>
                 <ul>
                     <li>Notas ilimitadas</li>
                     <li>Agenda simples</li>
@@ -73,5 +140,10 @@
             </div>
         </section>
     </main>
+    <footer>
+        <p>Siga-nos nas redes sociais:</p>
+        <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Linkedln</a>
+        <p>&copy; 2025 OrgaNote. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
