@@ -11,6 +11,7 @@
        body {
         font-family: Sriracha;
         background-color: rgb(255, 255, 255);
+        font-size: 2em;
        }
 
 
@@ -18,26 +19,82 @@
             background-color: black;
             color: white;
             text-align: center;
-            font-size: 4em;
+            font-size: 1.2em;
+            width: 100%;
         }
 
         h1 {
             margin-top: 0px;
             margin-bottom: 0px;
             font-size: 10vw;
-            font-family: passion;
+            font-family: var(passion);
+            font-style: bold;
         }
 
         header > nav a {
             color: white;
-            font-size: 0.4em;
+            font-size: 1.2em;
         }
+
+        .pb{
+            line-height: 1.5em;
+            background-color: white;
+            padding: 1em;
+            margin: 0em 0em 0em 0em;
+        }
+
+        footer {
+            color: white;
+            text-align: center;
+            background-color: black;
+            font-family: Ital;
+            height: 2em;
+        }
+
+        footer  a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+
+
+        #pimg1 {
+            background-image: url(imagens/background001.jpg);
+            background-position: right center;
+            height: 20em;
+            margin: 0em 0em 0em 0em;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        #img2 {
+            background-image: url(imagens/background002.jpg);
+            background-position: right center;
+            height: 20em;
+            margin: 0em 0em 0em 0em;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+
+        }
+
+        .img {
+            background-color: rgba(0, 0, 0, 0.514);
+            color: white;
+            padding: 1em;
+            width: 15em;
+            margin-left: 1em;
+            margin-top: 2em;
+            position: absolute;
+        }
+
     </style>
 </head>
 <body>
     <header>
         <h1>Cordel Moderno</h1>
-        <nav><a href="https://www.recantodasletras.com.br/poesias/3186743">Por Milton Duarte</a></nav>
+        <nav><p>Por <a href="https://www.recantodasletras.com.br/poesias/3186743">Milton Duarte</a></p></nav>
     </header>
     <section>
         <article class="pb">
@@ -117,7 +174,7 @@
         </article>
     </section>
     <footer>
-        <p>Site criado por <a href=""></a></p>
+        <p>Site criado por <a href="https://github.com/Hick-Kauere/" target="_blank">Hick Kauere</a> para o <a href="https://www.cursoemvideo.com/" target="_blank">CursoemVideo</a></p>
     </footer>
     
 </body>
