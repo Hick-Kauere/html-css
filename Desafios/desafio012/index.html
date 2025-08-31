@@ -5,89 +5,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cordel Moderno</title>
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
+body {
+    font-family: "Sriracha", cursive;
+    background-color: #fff;
+    font-size: 3vw;
+    margin: 0;
+}
 
-       body {
-        font-family: Sriracha;
-        background-color: rgb(255, 255, 255);
-        font-size: 3vw;
-       }
+/* Cabeçalho */
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+}
 
+h1 {
+    margin: 0;
+    font-size: 10vw;
+    font-family: "Passion One", cursive;
+    font-weight: 900; /* negrito */
+}
 
-        header {
-            background-color: black;
-            color: white;
-            text-align: center;
-            font-size: 1.2em;
-            width: 100%;
-        }
+header nav a {
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+}
 
-        h1 {
-            margin-top: 0px;
-            margin-bottom: 0px;
-            font-size: 10vw;
-            font-family: var(passion);
-            font-style: bold;
-        }
+/* Poema em blocos */
+.pb {
+    line-height: 1.5em;
+    background-color: white;
+    padding: 1em;
+    margin: 0;
+}
 
-        header > nav a {
-            color: white;
-            font-size: 1.2em;
-        }
+/* Rodapé */
+footer {
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-family: "Inter", sans-serif;
+    padding: 0.5em;
+}
 
-        .pb{
-            line-height: 1.5em;
-            background-color: white;
-            padding: 1em;
-            margin: 0em 0em 0em 0em;
-        }
+footer a {
+    text-decoration: none;
+    color: white;
+}
 
-        footer {
-            color: white;
-            text-align: center;
-            background-color: black;
-            font-family: Ital;
-            height: 2em;
-        }
+/* Imagens de fundo */
+#pimg1, #img2 {
+    background-position: right center;
+    height: 20em;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 
-        footer  a {
-            text-decoration: none;
-            color: rgb(255, 255, 255);
-        }
+    display: flex;               /* centraliza o texto */
+    align-items: center;
+    padding: 2em;
+}
 
+#pimg1 {
+    background-image: url(imagens/background001.jpg);
+}
 
-        #pimg1 {
-            background-image: url(imagens/background001.jpg);
-            background-position: right center;
-            height: 20em;
-            margin: 0em 0em 0em 0em;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
+#img2 {
+    background-image: url(imagens/background002.jpg);
+}
 
-        }
+/* Texto sobre imagens */
+.img {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 1em;
+    max-width: 40ch; /* limita largura do texto */
+}
 
-        #img2 {
-            background-image: url(imagens/background002.jpg);
-            background-position: right center;
-            height: 20em;
-            margin: 0em 0em 0em 0em;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-attachment: fixed;
-
-        }
-
-        .img {
-            background-color: rgba(0, 0, 0, 0.514);
-            color: white;
-            padding: 1em;
-            width: 50vh;
-            margin-left: 1em;
-            margin-top: 2em;
-            position: absolute;
-        }
 
     </style>
 </head>
