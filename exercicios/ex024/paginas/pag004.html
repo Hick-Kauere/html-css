@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controle de Gastos</title>
+<style>
+  /* Estilos gerais para a página */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  /* Estilo para as informações no topo */
+  .info-header {
+    margin-bottom: 20px;
+    font-size: 1.1em;
+  }
+  .info-header p {
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  .devendo {
+    background-color: #cfe2f3; /* Azul claro */
+  }
+  .pago {
+    background-color: #d9ead3; /* Verde claro */
+  }
+
+  /* Estilo da tabela */
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Remove o espaço entre as bordas */
+    margin-top: 20px;
+  }
+
+  /* Estilo das células do cabeçalho (th) e do corpo (td) */
+  th, td {
+    border: 1px solid #cccccc; /* Borda cinza clara */
+    padding: 8px;
+    text-align: left;
+  }
+
+  /* Estilo do cabeçalho da tabela */
+  thead {
+    background-color: #f2f2f2; /* Cinza claro */
+    font-weight: bold;
+  }
+
+  /* Centraliza o texto no cabeçalho dos meses */
+  thead th {
+    text-align: center;
+  }
+
+  /* Estilo do rodapé da tabela */
+  tfoot {
+    font-weight: bold;
+  }
+  
+  /* Classe específica para as células "PAGO" */
+  .status-pago {
+    background-color: #d9ead3; /* Verde claro */
+    font-weight: bold;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+  <h3>Devendo para minha mãe</h3>
+
+  <div class="info-header">
+    <p class="devendo"><strong>DEVENDO:</strong> R$ 4.303,45</p>
+    <p class="pago"><strong>PAGO:</strong> R$ 930,55</p>
+    <p style="float: right;">19/09/2025</p>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th rowspan="2">Descrição</th>
+        <th rowspan="2">Valor</th>
+        <th colspan="14">Mês</th>
+      </tr>
+      <tr>
+        <th>julho/2025</th>
+        <th>agosto/2025</th>
+        <th>setembro/2025</th>
+        <th>outubro/2025</th>
+        <th>novembro/2025</th>
+        <th>dezembro/2025</th>
+        <th>janeiro/2026</th>
+        <th>fevereiro/2026</th>
+        <th>março/2026</th>
+        <th>abril/2026</th>
+        <th>maio/2026</th>
+        <th>junho/2026</th>
+        <th>junho/2026</th>
+        <th>junho/2026</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Gasto na oficina</td>
+        <td>R$ 433,00</td>
+        <td>R$ 61,86</td>
+        <td>R$ 61,86</td>
+        <td>R$ 61,86</td>
+        <td>R$ 61,86</td>
+        <td>R$ 61,86</td>
+        <td>R$ 61,86</td>
+        <td>R$ 61,86</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Armação do oculos</td>
+        <td>R$ 200,00</td>
+        <td>R$ 20,00</td>
+        <td>R$ 20,00</td>
+        <td>R$ 20,00</td>
+        <td>R$ 20,00</td>
+        <td>R$ 20,00</td>
+        <td>R$ 20,00</td>
+        <td>R$ 20,00</td>
+        <td></td>
+        <td>R$ 20,00</td>
+        <td>R$ 20,00</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Moto</td>
+        <td>R$ 4.601,00</td>
+        <td>R$ 383,42</td>
+        <td>R$ 383,42</td>
+        <td>R$ 383,42</td>
+        <td>R$ 383,42</td>
+        <td>R$ 383,42</td>
+        <td>R$ 383,42</td>
+        <td>R$ 383,42</td>
+        <td>R$ 383,42</td>
+        <td>R$ 383,42</td>
+        <td>R$ 383,42</td>
+        <td>
