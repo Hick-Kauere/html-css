@@ -24,5 +24,37 @@ body {
     width: 311px;
     height: 627px;
     background: url(../pacote-d013/imagens/frame-iphone.png) no-repeat center center;
+}
+#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 269px;
+    height: 471px;
     
+}
+
+#redes {
+    position: absolute;
+    top: 22%;
+    left: 94%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#redes a img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 0 5px #000;
+    transition: all 0.3s ease;
+}
+
+#redes a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #000;
+    border-color: #555;
 }
