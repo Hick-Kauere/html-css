@@ -13,11 +13,16 @@ html, body {
 
 body {
     background: url(../pacote-d013/imagens/fundo-madeira.jpg) no-repeat center center fixed;
+    position: relative;
 }
 
 #celular {
-    width: 300px;
-    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 311px;
+    height: 627px;
     background: url(../pacote-d013/imagens/frame-iphone.png) no-repeat center center;
-    background-color: aqua;
+    
 }
