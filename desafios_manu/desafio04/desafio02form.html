@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Contato</title>
+</head>
+<body>
+    <h1>Formulário de Contato</h1>
+    <form action="cad.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <div>
+                <label for="inome">Nome Completo:</label>
+                <input type="text" name="nome" id="inome" placeholder="Digite seu nome completo" required maxlength="30" autocomplete="name" >
+            </div>
+            <div>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail" required autocomplete="email">
+            </div>
+            <div>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" placeholder="(99) 99999-9999" required autocomplete="tel">
+        </fieldset>
+        <div>
+            <label for="iass">Assunto:</label>
+            <select name="assunto" id="iass">
+                <option value="duvida">Dúvida</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="reclamacao">Reclamação</option>
+                <option value="elogio">Elogio</option>
+                <option value="outro">Outro</option>
+            </select>
+        </div>
+        <div>
+            <label for="imensagem">Mensagem:</label><br>
+            <textarea name="mensagem" id="imensagem" cols="30" rows="10" placeholder="Digite sua mensagem aqui..." required></textarea>
+        </div>
+        <div>
+            <label for="ipref">Preferência de Contato:</label>
+            <input type="radio" name="pref" id="ipref1" value="email" checked> E-mail
+            <input type="radio" name="pref" id="ipref2" value="telefone"> Telefone
+        </div>
+        <div>
+            <input type="checkbox" name="termo" id="itermo" required>Li e aceito os termos de serviço
+        </div>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+
+    </form>
+</body>
+</html>
