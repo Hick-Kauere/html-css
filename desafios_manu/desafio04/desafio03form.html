@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <style>
+        html{
+            height: 100%;
+        }
+
+        body {
+            background-image: linear-gradient( 45deg, #5820db, #ACB6E5);
+        }
+        header {
+            background-color: #3f08c95e;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        main {
+            height: 80%;
+            background-color: white;
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        fieldset {
+            border: 2px solid #3f08c9;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MEDSCLOSET</h1>
+        <h2>Cadastro de Produtos</h2>
+    </header>
+    <main>
+        <section id="detalhes">
+            <form action="cad.php" method="post" autocomplete="off">
+                <fieldset>
+                    <legend>Detalhes do Produto</legend>
+                    <div>
+                        <label for="inomeprod">Nome do Produto:</label>
+                        <input type="text" name="nomeprod" id="inomeprod"  required maxlength="50">
+                    </div>
+                    <div>
+                        <label for="icat">Categoria</label>
+                        <input type="text" name="cat" id="icat" list="categorias" required maxlength="30">
+                        <datalist id="categorias">
+                            <option value="eletronico">Eletrônico</option>
+                            <option value="moveis">Móveis</option>
+                            <option value="roupas">Roupas</option>
+                            <option value="livros">Livro</option>
+                        </datalist>
+                    </div>
+                    <div>
+                        <label for="idesc">Descrição do Produto</label>
+                        <textarea name="desc" id="idesc" cols="30" rows="5" required maxlength="200"></textarea>
+                    </div>
+                    <div>
+                        <label for="icor">Cor do Produto</label>
+                        <input type="color" name="cor" id="icor" value="#000000" required>
+                    </div>
+                    <div>
+                        <label for="img">Imagem do Produto</label>
+                        <input type="file" name="img" id="img" accept="image/*" required>
+                </fieldset>
+                </div>
+                <fieldset>
+                    <div class="preestoque">
+                        <label for="ipreco">Preço do Produto</label>
+                        <input type="number" name="preco" id="ipreco" step="0.01" required>
+                    </div>
+                    <div>
+                        <label for="iqtd">Quantidade em Estoque</label>
+                        <input type="number" name="qtd" id="iqtd" min="0" required>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
