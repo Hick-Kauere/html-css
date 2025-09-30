@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cad.php" method="get">
+        <p>
+            <label for="iest">Estado</label>
+            <select name="Estado" id="iest">
+                <optgroup label="Região Sul">
+                    <option value="sp">São Paulo</option>
+                    <option value="rj">Rio de Janeiro</option>
+                    <option value="mg">Minas Gerais</option>
+                    <option value="es">Espirito Santo</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="ma">Maranhão</option>
+                    <option value="ba">Bahia</option>
+                    <option value="se">Sergipe</option>
+                    <option value="al">Alagoas</option>
+                </optgroup>
+            </select>
+        </p>
+            <p>
+                <label for="iprof">Profissão:</label>
+                <input type="text" name="prof" id="iprof" list="profissoes" placeholder="Digite sua profissão">
+                <datalist id="profissoes">
+                    <option value="Engenheiro">Engenheiro
+                    <option value="Médico">Médico
+                    <option value="Professor">Professor
+                    <option value="Advogado">Advogado
+                    <option value="Técnico">Técnico
+                </datalist>
+            </p>
+        
+        <p>
+            <label for="imsg">Mensagens:</label>
+            <textarea name="msg" id="imsg" cols="30" rows="5" placeholder="Digite sua mensagem"></textarea>
+        </p>    
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
