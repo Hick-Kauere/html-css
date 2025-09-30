@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter HK</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: linear-gradient(to right top, rgb(0, 204, 255), rgb(53, 48, 117));
+            width: 100vh;
+            height: 100vh;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+            background-color: rgba(255, 249, 249, 0.192);
+            border-radius: 10px;
+            width: 97vw;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
+        }
+
+        .informacoes {
+            background-color: rgba(255, 249, 249, 0.192);
+            width: 300px;
+            height: auto;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.192);
+        }
+        label {
+            color: white;
+            font-weight: bold;   
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Assine nossa Newsletter</h1>
+    <div class="informacoes">
+        <form action="cad.php" method="get" autocomplete="on">
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Digite seu nome completo" autocomplete="name">
+            </div>
+            <div>
+                <label for="iemail">E-mail:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" placeholder="Digite seu e-mail" required>
+            </div>
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+    </div>
+    </form>
+</body>
+</html>
