@@ -10,7 +10,7 @@
         }
 
         body {
-            background-image: linear-gradient( 45deg, #5820db, #ACB6E5);
+            background-image: linear-gradient( 45deg, #5820db ,rgba(255, 251, 28, 0.397) 20%, #ACB6E5 25%);
         }
         header {
             background-color: #3f08c95e;
@@ -19,6 +19,13 @@
             margin-bottom: 20px;
             border-radius: 10px;
             box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+            height: 120px;
+        }
+
+        h1 {
+            margin: 0;
+            padding-top: 10px;
+            font-size: 2.5em;
         }
 
         main {
@@ -26,6 +33,7 @@
             background-color: white;
             border-radius: 10px;
             padding: 10px;
+            box-shadow:10px 10px 10px rgba(0, 0, 0, 0.1);
         }
 
         fieldset {
@@ -35,6 +43,40 @@
             padding: 10px;
             display: inline-block;
         }
+
+        input, textarea {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        input[type="color"] {
+            padding: 0;
+            height: 50px;
+            width: 50px;
+        }
+
+        input[type="submit"], input[type="reset"] {
+            background-color: #5f75da;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: auto;
+            padding: 10px 20px;
+            margin-right: 10px;
+            box-shadow: 0px 3px 11px -2px #000000;
+        }
+
+        input[type="submit"]:focus, input[type="reset"]:focus {
+            background-color: #3f08c9;
+        }
+
+        
+        
 
 
     </style>
@@ -47,14 +89,14 @@
     <main>
         <section id="detalhes">
             <form action="cad.php" method="post" autocomplete="off">
-                <fieldset>
+                <fieldset id="coluna-esquerda">
                     <legend>Detalhes do Produto</legend>
                     <div>
                         <label for="inomeprod">Nome do Produto:</label>
                         <input type="text" name="nomeprod" id="inomeprod"  required maxlength="50">
                     </div>
                     <div>
-                        <label for="icat">Categoria</label>
+                        <label for="icat">Categoria:</label>
                         <input type="text" name="cat" id="icat" list="categorias" required maxlength="30">
                         <datalist id="categorias">
                             <option value="eletronico">Eletrônico</option>
@@ -64,11 +106,11 @@
                         </datalist>
                     </div>
                     <div>
-                        <label for="idesc">Descrição do Produto</label>
+                        <label for="idesc">Descrição do Produto:</label>
                         <textarea name="desc" id="idesc" cols="30" rows="5" required maxlength="200"></textarea>
                     </div>
                     <div>
-                        <label for="icor">Cor do Produto</label>
+                        <label for="icor">Cor do Produto:</label>
                         <input type="color" name="cor" id="icor" value="#000000" required>
                     </div>
                     <div>
@@ -76,7 +118,7 @@
                         <input type="file" name="img" id="img" accept="image/*" required>
                 </fieldset>
                 </div>
-                <fieldset>
+                <fieldset id="coluna-direita">
                     <div class="preestoque">
                         <label for="ipreco">Preço do Produto</label>
                         <input type="number" name="preco" id="ipreco" step="0.01" required>
@@ -86,6 +128,12 @@
                         <input type="number" name="qtd" id="iqtd" min="0" required>
                     </div>
                 </fieldset>
+                <div>
+                    <input type="submit" value="Cadastrar Produto">
+                </div>
+                <div>
+                    <input type="reset" value="Cancelar">
+                </div>
             </form>
         </section>
     </main>
