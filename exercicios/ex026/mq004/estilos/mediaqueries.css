@@ -1,1 +1,46 @@
 @charset "utf-8";
+
+@charset "UTF-8";
+/*media queries*/
+
+@media print {
+    body {
+        width: 100vw;
+    }
+    header {
+        display: none;
+    }
+    main {
+        width: 100vw;
+        height: auto;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    #burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+}
+    
+@media screen and (min-width:993px) and (max-width:1200px) {
+     #burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+}
+
+@media screen and (min-width:1201px) 
+{
+ #burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+}
