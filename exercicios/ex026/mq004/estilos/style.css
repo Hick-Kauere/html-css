@@ -19,17 +19,21 @@ body{
 }
 
 header{
+    margin: auto;
+    width: 95vw;
+    
     background-color: rgba(0, 0, 0, 0.363);
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    
+    box-shadow: 1px 1px 5px 0px black;
+    border-radius: 10px;
 }
 
 main{
     background-color: white;
     width: 90vw;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
     margin-top: 20px;
     padding: 10px;
@@ -50,9 +54,11 @@ menu > ul > li > a{
     text-decoration: none;
     color: white;
     background-color: #7608cfb2;
-    border-radius: 5px;
+    border-radius: 8px;
     text-align: center;
     margin: 2px;
+    padding: 5px;
+    box-shadow: 1px 1px 5px 0px black;
 }
 
 
