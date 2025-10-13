@@ -32,6 +32,8 @@ main {
     border: 1px solid white ;
     border-radius: 20px;
     width: 50vw;
+    min-width: 50px;
+    max-width: 400px;
     margin: auto;
     box-shadow: 
         10px 10px 30px rgba(216, 103, 131, 0.25), /* sombra mais escura */
