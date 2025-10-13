@@ -9,18 +9,17 @@
     --texta: #D86783;
 }
 
-html, body {
-    width: 100vw;
-    height: 100vh;
-}
 
 body {
     background-image: url(../img/back_p.png);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
+    margin: auto;
     height: 15vh;
+    width: 50vw;
 }
 
 h1, h2 {
@@ -32,14 +31,11 @@ main {
     background-color: rgba(255, 255, 255, 0.068);
     border: 1px solid white ;
     border-radius: 20px;
-    width: 80vw;
+    width: 50vw;
     margin: auto;
     box-shadow: 
         10px 10px 30px rgba(216, 103, 131, 0.25), /* sombra mais escura */
         -10px -10px 30px rgba(255, 255, 255, 0.6); /* brilho suave */
-    padding: 40px;
-    width: 400px;
-    margin: 50px auto;
 }
 
 form {
