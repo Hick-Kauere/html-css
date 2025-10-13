@@ -41,6 +41,14 @@ main {
     padding: 10px;    
 }
 
+main > img {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 100px;
+}
+
 form {
     text-align: center
 }
@@ -61,6 +69,7 @@ input[type="submit"] {
     padding: 5px;
     width: 80px;
     background-image: linear-gradient(to top, #b63d5b, rgba(255, 255, 255, 0.247) 98%) ;
+    margin-bottom: 10px;
 }
 
 label {
