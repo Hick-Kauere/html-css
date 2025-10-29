@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="Pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <title>Medscloset</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector("form");
+            form.addEventListener("submit", async function(event) {
+                event.preventDefault();
+
+                const formData = new FormData(form);
+                const responseDiv = document.createElement("div");
+                responseDiv.id = "responseMessage";
+                responseDiv.style.marginTop = "10px";
+                responseDiv.style.padding = "10px";
+                responseDiv.style.border = "1px solid";
+                responseDiv.style.borderRadius = "5px";
+
+                try {
+                    const response = await fetch("/cad.py", {
+                        method: "POST",
+                        body: formData
+                    });
+
+                    const data = await response.json();
+
+                    if (data.success) {
+                        responseDiv.style.borderColor = "green";
+                        responseDiv.style.color = "green";
+                        responseDiv.textContent = data.message;
+                    } else {
+                        responseDiv.style.borderColor = "red";
+                        responseDiv.style.color = "red";
+                        responseDiv.textContent = data.message;
+                    }
+                } catch (error) {
+                    responseDiv.style.borderColor = "red";
+                    responseDiv.style.color = "red";
+                    responseDiv.textContent = "Erro ao conectar com o servidor: " + error.message;
+                }
+
+                const existingResponseDiv = document.getElementById("responseMessage");
+                if (existingResponseDiv) {
+                    existingResponseDiv.remove();
+                }
+                form.parentNode.insertBefore(responseDiv, form.nextSibling);
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Meds Closet</h1>
+    </header>
+    <main>
+        
+        <h2>Bem-vindo de volta</h2>
+        <img src="img/logo.png" alt="">
+        <form action="cad.py" autocomplete="on" method="post">
+            <div>
+                <label for="iusu">Usuário:</label>
+                <input type="text" name="usuario" id="iusu" placeholder="Usuário" >
+            </div>
+            <div>
+                <label for="isen">Senha:</label>
+                <input type="password" name="senha" id="isen" placeholder="Senha">
+            </div>
+
+            <div>
+                <input type="submit" value="Entrar">
+            </div>
+            <div>
+                <a href="#">Esqueci a Senha</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
