@@ -16,30 +16,19 @@
             padding: 10px 0;
             flex-flow: row wrap;
         }
-        .menu {
+        .ms {
+            margin: 5px;
             display: flex;
-            align-items: flex-end;
-            background-color: #333;
-            width: 500px;
-        }
-        @media (max-width: 600px) {
-            .menu {
-                flex-direction: column;
-                align-items: flex-start;
-            }
-            .menu div {
-                width: 100%;
-                text-align: center;
-            }
+            background-color: bisque;
         }
     </style>
 </head>
 <body>
     <header>
-        <div>
+        <div class="ms">
             <h1>Meu Site</h1>
         </div>
-        <div class="menu">
+        <div class="ms">
             <div><a href="#">Home</a></div>
             <div><a href="#">Sobre</a></div>
             <div><a href="#">Serviços</a></div>
