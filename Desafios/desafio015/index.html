@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu responsivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            flex-flow: row wrap;
+        }
+        .menu {
+            display: flex;
+            align-items: flex-end;
+            background-color: #333;
+            width: 500px;
+        }
+        @media (max-width: 600px) {
+            .menu {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .menu div {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Meu Site</h1>
+        </div>
+        <div class="menu">
+            <div><a href="#">Home</a></div>
+            <div><a href="#">Sobre</a></div>
+            <div><a href="#">Serviços</a></div>
+            <div><a href="#">Contato</a></div>
+        </div>
+    </header>
+    <main>
+        <h2>Bem-vindo ao meu site!</h2>
+        <p>Este é um exemplo de um menu responsivo usando Flexbox.</p>
+        <p>Reduza o tamanho da janela do navegador para ver como o menu se adapta.</p>
+            </main>
+</body>
+</html>
