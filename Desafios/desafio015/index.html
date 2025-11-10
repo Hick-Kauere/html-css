@@ -9,26 +9,76 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            font-size: 1em;
         }
         header {
             background-color: #4CAF50;
             color: white;
             padding: 10px 0;
             flex-flow: row wrap;
-        }
-        .ms {
-            margin: 5px;
             display: flex;
-            background-color: bisque;
+            justify-content: space-between;
+        }
+        #ms {
+            margin: 5px;
+            flex-basis: 450px;
+        }
+        #menu {
+            flex-flow: row wrap;
+            flex-basis: 400px;
+            flex-direction: row;
+            display: flex;
+            align-items: center;
+        }
+        #menu a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+            background-color: #214722;
+            margin: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+        }
+        #menu a:hover {
+            background-color: #45a049;
+            border: 1px solid white;
+            
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            #menu {
+                flex-basis: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: stretch;
+            }
+            #menu > div {
+                width: 100%;
+            }
+            #menu a {
+                width: 100%;
+                margin: 5px 0;
+                text-align: center;
+            }
+            #ms {
+                flex-basis: 100%;
+                text-align: center;
+                margin-bottom: 10px;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="ms">
+        <div id="ms">
             <h1>Meu Site</h1>
         </div>
-        <div class="ms">
+        <div id="menu">
             <div><a href="#">Home</a></div>
             <div><a href="#">Sobre</a></div>
             <div><a href="#">Serviços</a></div>
@@ -41,4 +91,4 @@
         <p>Reduza o tamanho da janela do navegador para ver como o menu se adapta.</p>
             </main>
 </body>
-</html>
+</html></div>
